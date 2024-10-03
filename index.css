@@ -1,0 +1,90 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: DM Sans, sans-serif;
+}
+
+/* Hero Section */
+#hero {
+	max-width: 100%;
+	height: 100vh;
+	background: url(./images/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	align-content: center;
+}
+
+#hero figcaption {
+	padding: 1rem;
+	margin: 0;
+}
+
+#hero h1 {
+	font-size: 2.5rem;
+}
+
+#hero p {
+	font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+	#hero h1 {
+		font-size: 1.75rem;
+	}
+	#hero p {
+		font-size: 1rem;
+	}
+}
+
+/* Carousel and Image Resizing */
+.carousel img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Products Section */
+#work-img {
+	height: 400px;
+	width: auto;
+}
+
+.card {
+	width: 24rem;
+}
+
+.card-img-top {
+	width: 100%;
+
+	object-fit: cover;
+}
+
+.row-cols-1 .card {
+	margin-bottom: 1.5rem;
+}
+
+/* Responsive Product Cards */
+@media (max-width: 768px) {
+	.card {
+		width: 100%;
+	}
+}
+
+/* Navbar */
+.navbar-nav.ms-auto.me-md-5.flex-column.flex-lg-row a.nav-link {
+	padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+	.navbar-nav {
+		flex-direction: column;
+	}
+}
+
+/* Footer */
+footer {
+	padding: 1rem 0;
+	text-align: center;
+}
